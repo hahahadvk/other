@@ -36,7 +36,7 @@ class encn_Cambridge_tc {
                 return node.innerText.trim();
         }
 
-        let base = 'https://dictionary.cambridge.org/search/direct/?datasetsearch=english-vietnamese&q=';
+        let base = 'https://dictionary.cambridge.org/search/english-french/direct/?q=';
 	    //https://dictionary.cambridge.org/search/english-vietnamese/direct/?q=
 		//https://dictionary.cambridge.org/search/direct/?datasetsearch=english-vietnamese&q=hello
         let url = base + encodeURIComponent(word);
