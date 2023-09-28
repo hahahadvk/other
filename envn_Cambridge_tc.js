@@ -10,7 +10,7 @@ class encn_Cambridge_tc {
         let locale = await api.locale();
         if (locale.indexOf('CN') != -1) return '剑桥英汉双解(繁体)';
         if (locale.indexOf('TW') != -1) return '劍橋英漢雙解(繁体)';
-        return 'Cambridge EN-> VN';
+        return 'Cambridge EN-> VN 2';
     }
 
     setOptions(options) {
@@ -37,7 +37,6 @@ class encn_Cambridge_tc {
         }
 
         let base = 'https://dictionary.cambridge.org/search/english-vietnamese/direct/?q=';
-	    //
 		//https://dictionary.cambridge.org/search/direct/?datasetsearch=english-vietnamese&q=hello
         let url = base + encodeURIComponent(word);
         let doc = '';
